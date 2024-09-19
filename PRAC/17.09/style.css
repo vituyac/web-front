@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+}
+
+h1 {
+    padding: 20px 0;
+    text-shadow: 3px 3px 10px #000;
+    text-align: left;
+    font-family: "Noto";
+}
+
+.im {
+    width: 100px;
+    height: 100px;
+}
+
+.container {
+    background: #000;
+    width: 2000px;
+    height: 1000px;
+    display: flex;
+    /*justify-content: start; x*/
+    /* align-items: start; y */
+    /*flex-direction: column-reverse*/
+}
+
+.class1 {
+    background: #ab1818;
+    width: 200px;
+    height: 100px;
+}
+.class2 {
+    background: #0d70c1;
+    width: 200px;
+    height: 100px;
+}
+.class3 {
+    background: #e41da9;
+    width: 200px;
+    height: 100px;
+}
