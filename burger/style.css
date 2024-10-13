@@ -113,7 +113,9 @@ article p{
 footer {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     padding: 0px 160px;
     min-width: 1600px;
     height: 450px;
@@ -125,8 +127,8 @@ footer p{
     font-size: 20px;
     width: 100%;
     text-align: center;
-    border: 1px solid black;
     padding: 0;
+    margin-bottom: 20px;
 }
 
 footer a{
@@ -142,4 +144,11 @@ footer a{
     justify-content: center;
     gap: 38px;
     width: 100%;
+    margin-bottom: 50px;
+}
+
+.vktg {
+    height: 60px;
+    display: flex;
+    align-items: center;
 }
