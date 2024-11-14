@@ -21,6 +21,11 @@ header p {
     text-align: center;
 }
 
+main {
+    display: grid;
+    gap: 10vh;
+    margin-top:5vh;
+}
 .header-bg-prewiev-main {
     font-family: 'Bebas Neue';
     font-size: 60px;
@@ -49,7 +54,7 @@ header p {
 }
 
 .header-nav {
-    height: 6vh;
+    height: 8vh;
     display: grid;
     grid-template-columns: 40% 42%;
     border-bottom: 1px solid #E6E6E6;
@@ -67,6 +72,7 @@ header p {
     justify-items: center;
     align-items: center;
     font-size: 12px;
+    gap: 5px;
 }
 
 .header-nav-nav a {
@@ -83,7 +89,7 @@ header p {
     grid-template-columns: 1fr;
     grid-template-rows: auto minmax(274px, auto);
     justify-items: center;
-    background-color: antiquewhite;
+    padding: 0px 7px;
 }
 
 .main-story-h {
@@ -101,6 +107,7 @@ header p {
     height: 2px;
     background-color: #00A4E5;
     margin-top: 5px;
+    
 }
 
 .main-story-about-cards {
@@ -166,6 +173,7 @@ header p {
     display: grid;
     grid-template-columns: 30% 52% 18%;
     max-width: 1000px;
+    margin-bottom: 5vh;
 }
 
 .blue {
@@ -193,6 +201,7 @@ header p {
     margin-bottom: 5px;
 }
 
+
 #capa-text {
     font-size: 11px;
     line-height: 19px;
@@ -207,6 +216,7 @@ header p {
     justify-items: center;
     margin: 0 auto;
     max-width: 1000px;
+    padding: 0 7px;
 }
 
 .main-capabilities-cards {
@@ -241,10 +251,9 @@ header p {
 }
 
 .footer-bg {
-    width: 100%;
     height: 68vh;
     background: url(media/footer.png) 50% / cover no-repeat;
-    background-size: 100% 100%;
+    
     display: grid;
     grid-template-rows: 40% 60%;
     justify-items: center;
@@ -290,15 +299,16 @@ header p {
     text-align: center;
     color: white;
     font-weight: 600;
-    margin-right: 40px;
+    margin-right: 20px;
 }
 
 .email-container {
     background-color: #171819;
     display: grid;
-    grid-template-columns: 30% 20% 10%;
+    grid-template-columns: 20% 15% 5%;
     align-items: center;
     justify-content: center;
+    padding: 0px 7px;
 }
 
 .email-container input {
@@ -360,6 +370,10 @@ header p {
     grid-template-columns: 1fr 1fr 1fr;
     height: max-content;
     gap: 20px;
+    font-family: OpenSans;
+    font-size: 11px;
+    line-height: 25px;
+    letter-spacing: 0.8461539149284363px;
 }
 
 #LINKS {
@@ -372,8 +386,75 @@ header p {
     grid-template-columns: 1fr 1fr;
     height: max-content;
     gap: 20px;
+    font-size: 11px;
+    line-height: 16px;
+    letter-spacing: 0.846px;
 }
 
 #con {
-    grid-column: span 2; 
+    grid-column: span 2;
+}
+
+#con, #LINKS, #cmp {
+    font-size: 11px;
+    line-height: 12.89px;
+    letter-spacing: 0.846px;
+}
+
+.con-con {
+    display: grid;
+    gap: 20px;
+}
+
+.na1-p {
+    font-size: 12px;
+    line-height: 19px;
+    letter-spacing: 0.85px;
+}
+
+@media (width < 441px) {
+    .header-nav-nav {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-row: 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+        font-size: 12px;
+        gap: 5px;
+        padding: 5px;
+    }
+
+    .med {
+        grid-column: span 2;
+    }
+
+    .med1 {
+        grid-column: span 3;
+    }
+}
+
+@media (width < 1030px) {
+    .email-container {
+        background-color: #171819;
+        display: grid;
+        grid-template-columns: 40% 40% 15%;
+        align-items: center;
+        justify-content: center;
+        padding: 0px 7px;
+    }
+}
+
+@media (width < 618px) {
+    .main-capabilities-upper{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 1fr 1fr;
+        max-width: 1000px;
+        margin-bottom: 5vh;
+    }
+
+    .blue {
+        margin-top: 10px;
+        grid-column: span 2;
+    }
 }
