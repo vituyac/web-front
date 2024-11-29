@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <title>LAB5</title>
+</head>
+<body onload="loadData()">
+    <script src="script.js"></script>
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
+    <div class="test">
+        <header>
+            <div class="logo">
+                <img src="media/vector.svg" alt="logo">
+                <p>Вариант 4</p>
+            </div>
+            <input class="search" type="text" placeholder="Поиск">
+        </header>
+    </div>
+    <aside>
+        <header>
+            <div class="logo">
+                <img src="media/vector.svg" alt="logo">
+                <p>Вариант 4</p>
+            </div>
+            <nav>
+                <input class="search" type="text" placeholder="Поиск">
+                <div id="this"><a href="#" onclick="selectCategory('Все новости')">Все новости</a></div>
+                <div><a href="#" onclick="selectCategory('Спорт')">Спорт</a></div>
+                <div><a href="#" onclick="selectCategory('Общество')">Общество</a></div>
+                <div><a href="#" onclick="selectCategory('Экономика')">Экономика</a></div>
+            </nav>
+        </header>
+        <footer>
+            <p>&copy; Вариант 4.</p>
+            <p>Кистерёв Виктор,</p>
+            <p>группа ПИ-22-1</p>
+        </footer>
+    </aside>
+    <main>
+        <header>
+            <h1>Все контакты</h1>
+            <div class="dropdown">
+                <button class="dropdown-button" onclick="toggleDropdown()" id="dropdownButton">
+                    <span id="selectedOption">По умолчанию</span>
+                    <span>▼</span>
+                </button>
+                <div class="dropdown-content" id="dropdownMenu">
+                    <a href="#" onclick="selectOption('По умолчанию')">По умолчанию</a>
+                    <a href="#" onclick="selectOption('Сначала новые')">Сначала новые</a>
+                    <a href="#" onclick="selectOption('Сначала старые')">Сначала старые</a>
+                </div>
+            </div>
+            <nav>
+                <div id="this"><a href="#" onclick="selectCategory('Все новости')">Все новости</a></div>
+                <div><a href="#" onclick="selectCategory('Спорт')">Спорт</a></div>
+                <div><a href="#" onclick="selectCategory('Общество')">Общество</a></div>
+                <div><a href="#" onclick="selectCategory('Экономика')">Экономика</a></div>
+            </nav>
+        </header>
+        <div class="cards" id="cardsContainer"></div>
+        <footer></footer>
+    </main>
+</body>
+</html>
