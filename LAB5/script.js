@@ -5,6 +5,8 @@ function loadData(){
     }, 300);
 }
 
+let sortOption = 'По умолчанию';
+
 function selectCategory(option) {
     const currentActive = document.getElementById('this');
     currentActive.removeAttribute('id');
@@ -16,18 +18,34 @@ function selectCategory(option) {
     });
 
     targetDiv.id = "this";
-    sortCards(option);
+    sortCards(option, sortOption);
 }
 
-function sortCards(option) {
+function selectOption(option) {
+    sortOption = option;
+
+    const dropdownButton = document.getElementById('dropdownButton');
+    const selectedOption = document.getElementById('selectedOption');
+    if (option === 'По умолчанию') selectedOption.innerText = 'По умолчанию';
+    if (option === 'Сначала новые') selectedOption.innerText = 'Сначала новые';
+    if (option === 'Сначала старые') selectedOption.innerText = 'Сначала старые';
+    document.getElementById("dropdownMenu").classList.remove("show");
+    const currentCategory = document.querySelector('#this a').innerText.trim();
+    sortCards(currentCategory, sortOption);
+}
+
+function sortCards(category, timeSort) {
     let sortedCards = [...cardsData];
 
-    if (option === 'Все новости') {
-        sortedCards = [...cardsData];
-    } else {
-        sortedCards = cardsData.filter(card => card.tag === option);
+    if (category !== 'Все новости') {
+        sortedCards = cardsData.filter(card => card.tag === category);
     }
 
+    if (timeSort === 'Сначала новые') {
+        sortedCards.sort((a, b) => new Date(b.date) - new Date(a.date));
+    } else if (timeSort === 'Сначала старые') {
+        sortedCards.sort((a, b) => new Date(a.date) - new Date(b.date));
+    }
     displayCards(sortedCards);
 }
 
