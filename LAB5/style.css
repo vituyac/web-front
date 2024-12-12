@@ -17,6 +17,10 @@ aside {
     top: 0;
 }
 
+.logo img {
+    animation: spin 3s linear infinite;
+}
+
 .logo {
     display: flex;
     gap: 16px;
@@ -171,6 +175,7 @@ article div{
     animation: spin 1s linear infinite;
 }
 
+
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
@@ -271,6 +276,16 @@ article div{
     font-weight: 400;
     color: #667085;
     margin-bottom: 16px;
+}
+
+.card {
+    transition: transform 0.3s ease;
+    transform: scale(1);
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
 main header nav {

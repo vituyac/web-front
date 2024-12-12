@@ -345,7 +345,32 @@ nav a{
 #s5 {
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
+
+.imgbox1 {
+    width: 182px;
+    height: 27px;
+}
+
+.imgbox2 {
+    width: 20px;
+    height: 20px;
+    margin: 31px 0px;
+}
+
+.imgbox3 {
+    width: 111px;
+    height: 15px;
+    margin-top: 25px;
+}
+
+.imgbox4 {
+    width: 1172px;
+    height: 20px;
+}
+
 
 .ttexxt {
     width: 735px;
@@ -355,4 +380,88 @@ nav a{
     letter-spacing: 0.8960000872612px;
     text-align: center;
     color: #373737;
+}
+
+.contactus {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contact3 {
+    grid-column: span 2;
+    background-color: #2E2E2E;
+    width: 1800px;
+    height: 339px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.contact1, .contact2 {
+    display: flex;
+    flex-direction: column;
+    width: 898px;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact1 {
+    background-color: #FBFBFB;
+}
+
+.contact2 {
+    background-color: #70BD59;
+}
+
+.contact2 .contact-text, .contact2 .contact-text2 {
+    color: #FFFFFF;
+}
+
+.contact-text{
+    font-family: Oswald;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 35.57px;
+    letter-spacing: 2.6666667461395264px;
+    color: #373737;
+    margin: 19px 0px 22px 0px;
+}
+
+.contact-text1{
+    font-family: OpenSans;
+    font-size: 14px;
+    line-height: 16.41px;
+    letter-spacing: 1.5555555820465088px;
+    color: #373737;
+}
+
+.contact3-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Oswald;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 19.27px;
+    letter-spacing: 0.8320000767707825px;
+    margin-bottom: 39px;
+}
+
+.copy {
+    display: flex;
+    flex-direction: column;
+    width: 1800px;
+    height: 58px;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    font-family: Oswald;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 19.27px;
+    letter-spacing: 0.8320000767707825px;
+    background-color: #252525;
 }
